@@ -8,7 +8,8 @@
 /deps/
 
 # Where 3rd-party dependencies like ExDoc output generated docs.
-/doc/
+# uncomment the line underneath if you do not want to push the doc to GitHub.
+# /doc/
 
 # Ignore .fetch files in case you like to edit your project deps locally.
 /.fetch
@@ -21,4 +22,3 @@ erl_crash.dump
 
 # Ignore package tarball (built via "mix hex.build").
 smoothixir-*.tar
-
