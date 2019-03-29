@@ -47,7 +47,7 @@ defmodule Smoothixir do
   """
   def get_smoothies_html_body({_, urls}) do
     urls
-    |> Enum.map(fn path -> HTTPoison.get(path) end)
+    |> Enum.map(fn url -> HTTPoison.get(url) end)
     |> Enum.map(fn {_, result} -> result.body end)
   end
 
